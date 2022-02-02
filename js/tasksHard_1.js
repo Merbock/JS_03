@@ -5,13 +5,13 @@ let tax = 0;
 
 if (yourMoney <= 15000) {
     tax = yourMoney * 0.13;
-    console.log(`Сумма вашего налога составила: ${tax} рублей`)
+    console.log(`Сумма вашего налога составила: ${tax} рублей`);
 }
 if (yourMoney > 15000 && yourMoney <= 50000) {
     tax = yourMoney * 0.2;
-    console.log(`Сумма вашего налога составила: ${tax} рублей`)
+    console.log(`Сумма вашего налога составила: ${tax} рублей`);
 }
 if (yourMoney > 50000) {
     tax = yourMoney * 0.3;
-    console.log(`Сумма вашего налога составила: ${tax} рублей`)
+    console.log(`Сумма вашего налога составила: ${tax} рублей`);
 }
