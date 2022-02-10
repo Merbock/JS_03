@@ -1,17 +1,10 @@
 'use strict';
 
-const money = +prompt('Введите ваш доход');
-let taxation = 0;
+const firstNum = +prompt('Введите первое число');
+const secondNum = +prompt('Введите второе число');
 
-if (money <= 15000) {
-    taxation = money * 0.13;
-    console.log(`Сумма вашего налога составила: ${taxation} рублей`);
+const checkMin = () => {
+    return (firstNum - secondNum < 0 && firstNum) || (secondNum - firstNum < 0 && secondNum);
 }
-if (money > 15000 && money <= 50000) {
-    taxation = (money - 15000) * 0.2;
-    console.log(`Сумма вашего налога составила: ${taxation} рублей`);
-}
-if (money > 50000) {
-    taxation = (money - 50000) * 0.3;
-    console.log(`Сумма вашего налога составила: ${taxation} рублей`);
-}
+
+console.log(checkMin());
